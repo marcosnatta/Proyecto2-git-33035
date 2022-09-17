@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>ContactoConsulNatta</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html"><img src="../assets/images/logo.jpg" alt="logoconsul"
+                    class="LOGO"></a>Consulnatta</h1>
+        <nav>
+            <ul class="barra-container">
+                <li><strong><a class="color-nav" href="../index.html">Home</a></strong></li>
+                <li><strong><a class="color-nav" href="../pages/Medicos.html">Medicos</a></strong></li>
+                <li><strong><a class="color-nav" href="../pages/Especialidades.html">Especialidades</a></strong>
+                </li>
+                <li><strong><a class="color-nav" href="../pages/Consultorios.html">Consultorios</a></strong></li>
+                <li><strong><a class="color-nav" href="../pages/Contacto.html">Contacto</a></strong></li>
+            </ul>
+        </nav>
+    </header>
+    <!--contacto, hacer formulario  -->
+
+
+    <main>
+
+        <section>
+
+            <h2 class="contacto-info">Contacto para mas info</h2>
+
+            <p class="parrafo-info"> Si usted desea ponerse en contacto con nosotros, dejar un comentario o queja, puede hacerlo mas abajo, a
+                su vez podra recibir automaticamente en su mail informacion actualizada sobre nuestros consultios, si lo
+                desea haciendo click mas abajo </p>
+
+            <form>
+
+            <div class="formuconsul">
+
+                <label for="campo-usuario">ingrese su nombre:</label>
+                <input type="text" id="campo-usuario" placeholder="ej: marcos natta">
+
+            </div>
+<!-- asunto de mensaje -->
+            <div class="formuconsul">
+
+                <label for="">indique asunto del mensaje:</label>
+                <input type="text" placeholder="comentario, duda o queja">
+
+            </div>
+<!-- mail -->
+            <div class="formuconsul">
+
+                <label for="">ingrese su mail (solo si desea que le respondamos):</label>
+                <input type="email">
+            </div>
+
+            <div class="formuconsul">
+<!-- genero -->
+                <label for="">ingrese su genero</label>
+
+                <select name="" id="">
+                    <option value="mujer">mujer</option>
+                    <option value="hombre">hombre</option>
+
+                </select>
+
+            </div>
+<!-- comentarios -->
+            <div class="formuconsul">
+
+                <label for="">Aqui usted podra ingresar su comentario o queja:</label>
+                <textarea name="" id="" cols="20" rows="10"></textarea>
+
+            </div>
+<!-- newsletter -->
+            <div class="formuconsul">
+
+                <p>Quiere recibir nuestro mail semanal con mas informacion?</p>
+                <label for="si">si</label>
+                <input type="radio" name="si" id="">
+
+                <label for="no">no</label>
+                <input type="radio" name="si" id="">
+
+            </div>
+<!-- adicinal checkbox -->
+
+            <div class="formuconsul">
+
+                <p>¿Como calificiaria nuestra pagina web?:</p>
+
+                <input type="checkbox">
+                <label for="">Muy buena atencion</label>
+
+                <input type="checkbox">
+                <label for="">buena atencion</label>
+
+                <input type="checkbox">
+                <label for="">mala atencion</label>
+
+                <input type="checkbox">
+                <label for="">Muy mala atencion</label>
+
+            </div>
+
+            <div>
+<!-- enviar/reset -->
+                <input type="submit" value="enviar">
+                <input type="reset" value="borrar todo">
+            </div>
+
+        </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h4>Mas Informacion Sobre Nosotros</h4>
+
+        <div>
+
+            <ul class="footer-container">
+
+                <li>Direccion: av libertador 455, merlo, buenos aires, argentina </li>
+                <li>Mail: consulnatta@gmail.Com</li>
+                <li>Numero de telefono general: 11 34567899</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <ul class="footer-container">
+
+                <li>Si desea contactartse con nosotros <a href="../pages/Contacto.html">Click Aqui</a></li>
+            </ul>
+
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
