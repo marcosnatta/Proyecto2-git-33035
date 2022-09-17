@@ -1,0 +1,26 @@
+/* cambios en el header */
+.titulo-consulnatta{
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: rgb(19, 120, 138);
+}
+.logoconsul{
+    width: 65px;
+    border-radius: 10px;    
+}
+/* cambiar de color la barra y agregar un borde simple */
+.navbar{
+    --bs-navbar-color: rgb(24, 112, 36);
+}
+
+/* modificar el h2 para que quede mas lindo */
+.sobre-nosotros{
+    text-align: center;
+    padding: 20px;
+}
+.nosotros{
+    color: rgb(119, 45, 45);
+}
+
