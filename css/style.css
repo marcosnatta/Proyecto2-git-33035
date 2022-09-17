@@ -24,3 +24,13 @@
     color: rgb(119, 45, 45);
 }
 
+.texto-presentacion{
+    text-align: center;
+    font-style: italic;
+    font-weight: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+ 
+/* footer - agregar redes sociales */
+
