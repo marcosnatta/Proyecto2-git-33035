@@ -88,18 +88,59 @@ a{
     align-items: center;
 }
 
-/* pagina medicos */
+/* pagina medicos con media*/
 
 .drs{
     color: rgb(179, 179, 52);
 }
 
+
 .doctores-items{
     font-style: italic;
     font-size: large;
     text-align: center;
-    display:flex;
-    padding-top: 30px;
-    padding-bottom: 100px;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
+
+@media(min-width:768px){
+    .doctores-items{
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+      grid-column-gap: 15px;
+      grid-row-gap: 100px;
+      justify-content: space-between;
+      
+    }
+}
+
+@media(min-width:1200px){
+    .doctores-items{
+        display: flex;
+        color: rgb(62, 151, 163);
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+
+
+/* pagina especialidades con grid */
+
+.grid-especialidades{
+    display: grid;
+    grid-template-columns: 100px 100px ;
+    grid-column-gap: 200px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.especialidades{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(128, 151, 73);
+    text-decoration-line: underline;
+}
+
