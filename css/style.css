@@ -92,6 +92,7 @@ a{
 
 .drs{
     color: rgb(179, 179, 52);
+
 }
 
 
@@ -129,12 +130,9 @@ a{
 /* pagina especialidades con grid */
 
 .grid-especialidades{
-    display: grid;
-    grid-template-columns: 100px 100px ;
-    grid-column-gap: 200px;
     text-align: center;
-    justify-content: center;
-    padding-bottom: 30px;
+    display: grid;
+    
 }
 
 .especialidades{
@@ -144,3 +142,26 @@ a{
     text-decoration-line: underline;
 }
 
+@media(min-width:768px){
+    .grid-especialidades{
+        color: rgb(68, 45, 45);
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 300px 300px;
+        grid-column-gap: 200px;
+        grid-row-gap: 100px;
+    }
+}
+
+@media(min-width:1200px){
+    .grid-especialidades{
+        align-items: center;
+        justify-content: center;
+        padding: 100px;
+        grid-template-columns: 100px 100px; 
+        grid-template-rows: 200px 200px;   
+        grid-row-gap: 140px;
+        justify-items: center;  
+    }
+   }
+
+/* consultorios */
