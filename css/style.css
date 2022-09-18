@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(233, 237, 241);   
+}
+
 /* cambios en el header */
 .titulo-consulnatta{
     text-align: center;
@@ -28,9 +32,58 @@
     text-align: center;
     font-style: italic;
     font-weight: 100px;
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
 }
  
 /* footer - agregar redes sociales */
 
+footer{
+    padding-bottom: 100px;
+}
+.footer-titulo{
+    text-align: center;
+    text-decoration: underline;
+    font-size:larger;
+    font-style: italic;
+    color: rgba(143, 75, 19, 0.63);
+    padding: 40px;
+}
+
+.texto-ul{
+    text-align: center;
+}
+/* sacar los odiosos bullet */
+ul{
+    font-size: large;
+    font-style: italic;
+    list-style: none;
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;    
+ }
+
+.boton-click{
+    padding: 10px;
+    width: 200px;
+    color: rgb(201, 70, 70);
+    border-radius: 20px;
+    background:linear-gradient(lightblue,rgb(190, 190, 204));
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.boton-click:hover{
+    color: white;
+    transform: rotate(360deg);
+
+}
+
+.redes{
+    display:flex; 
+    justify-content: space-around;
+    align-items: center;
+}
