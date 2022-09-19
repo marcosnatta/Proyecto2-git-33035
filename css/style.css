@@ -184,4 +184,36 @@ a{
     font-size: large;
     text-align: center;
 }
+/* formulario */
 
+.formulario{
+    padding: 20px;
+}
+.texto-contacto{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(97, 97, 46);
+    text-decoration-line: underline;
+}
+
+.texto-formulario{
+    font-size: x-large;
+    color:rgb(25, 28, 29);
+    text-decoration-line: underline;
+    padding-bottom: 25px;
+    text-align: center;
+    display: flex;
+}
+
+.bordes{
+    padding-right: 20px;
+    text-align: center;
+    width: 200px;
+    color: rgb(201, 70, 70);
+    border-radius: 20px;
+    background:linear-gradient(rgb(31, 228, 185),rgb(230, 236, 230));
+}
+
+.imputs{
+    text-align: center;  
+}

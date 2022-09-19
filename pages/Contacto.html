@@ -5,149 +5,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>ContactoConsulNatta</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>ConsulNatta</title>
 </head>
 
 <body>
-    <header>
-        <h1><a href="../index.html"><img src="../assets/images/logo.jpg" alt="logoconsul"
-                    class="LOGO"></a>Consulnatta</h1>
-        <nav>
-            <ul class="barra-container">
-                <li><strong><a class="color-nav" href="../index.html">Home</a></strong></li>
-                <li><strong><a class="color-nav" href="../pages/Medicos.html">Medicos</a></strong></li>
-                <li><strong><a class="color-nav" href="../pages/Especialidades.html">Especialidades</a></strong>
-                </li>
-                <li><strong><a class="color-nav" href="../pages/Consultorios.html">Consultorios</a></strong></li>
-                <li><strong><a class="color-nav" href="../pages/Contacto.html">Contacto</a></strong></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo.jpg" alt="logo-barranavegacion"
+                    class="logoconsul"> <a href="../index.html"></a></a>
+            <h1 class="titulo-consulnatta">Consulnatta</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end fs-5 fst-italic" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Medicos.html">Medicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Especialidades.html">Especialidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Consultorios.html">Consultorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!--contacto, hacer formulario  -->
 
 
     <main>
 
-        <section>
+        <section class="container">
 
-            <h2 class="contacto-info">Contacto para mas info</h2>
+            <h2 class="texto-contacto">Contacto para mas info</h2>
 
-            <p class="parrafo-info"> Si usted desea ponerse en contacto con nosotros, dejar un comentario o queja, puede hacerlo mas abajo, a
+            <p> Si usted desea ponerse en contacto con nosotros, dejar un comentario o queja, puede
+                hacerlo mas abajo, a
                 su vez podra recibir automaticamente en su mail informacion actualizada sobre nuestros consultios, si lo
                 desea haciendo click mas abajo </p>
 
-            <form>
+            <form class="formulario">
 
-            <div class="formuconsul">
+                <div>
 
-                <label for="campo-usuario">ingrese su nombre:</label>
-                <input type="text" id="campo-usuario" placeholder="ej: marcos natta">
+                    <label for="campo-usuario" class="texto-formulario">*Ingrese su nombre:</label>
+                    <input type="text" id="campo-usuario" placeholder="ej: marcos natta">
 
-            </div>
-<!-- asunto de mensaje -->
-            <div class="formuconsul">
+                </div>
+                <!-- asunto de mensaje -->
+                <div>
 
-                <label for="">indique asunto del mensaje:</label>
-                <input type="text" placeholder="comentario, duda o queja">
+                    <label for="asunto de mensaje" class="texto-formulario">*Indique asunto del mensaje:</label>
+                    <input type="text" placeholder="comentario, duda o queja">
 
-            </div>
-<!-- mail -->
-            <div class="formuconsul">
+                </div>
+                <!-- mail -->
+                <div>
 
-                <label for="">ingrese su mail (solo si desea que le respondamos):</label>
-                <input type="email">
-            </div>
+                    <label for="mail" class="texto-formulario">*Ingrese su mail (solo si desea que le respondamos):</label>
+                    <input type="email">
+                </div>
 
-            <div class="formuconsul">
-<!-- genero -->
-                <label for="">ingrese su genero</label>
+                <div class="">
+                    <!-- genero -->
+                    <label for="genero" class="texto-formulario">*Ingrese su genero</label>
 
-                <select name="" id="">
-                    <option value="mujer">mujer</option>
-                    <option value="hombre">hombre</option>
+                    <select name="" id="" class="bordes">
+                        <option value="mujer">mujer</option>
+                        <option value="hombre">hombre</option>
 
-                </select>
+                    </select>
 
-            </div>
-<!-- comentarios -->
-            <div class="formuconsul">
+                </div>
+                <!-- comentarios -->
+                <div >
 
-                <label for="">Aqui usted podra ingresar su comentario o queja:</label>
-                <textarea name="" id="" cols="20" rows="10"></textarea>
+                    <label for="queja" class="texto-formulario">*Aqui usted podra ingresar su comentario o queja:</label>
+                    <textarea name="comentario" id="" cols="20" rows="10"></textarea>
 
-            </div>
-<!-- newsletter -->
-            <div class="formuconsul">
+                </div>
+                <!-- newsletter -->
+                <div class="imputs">
 
-                <p>Quiere recibir nuestro mail semanal con mas informacion?</p>
-                <label for="si">si</label>
-                <input type="radio" name="si" id="">
+                    <p class="texto-formulario">*Quiere recibir nuestro mail semanal con mas informacion?</p>
+                    <label for="si">si</label>
+                    <input type="radio" name="si" id="">
 
-                <label for="no">no</label>
-                <input type="radio" name="si" id="">
+                    <label for="no">no</label>
+                    <input type="radio" name="si" id="">
 
-            </div>
-<!-- adicinal checkbox -->
+                </div>
+                <!-- adicinal checkbox -->
 
-            <div class="formuconsul">
+                <div class="imputs">
 
-                <p>¿Como calificiaria nuestra pagina web?:</p>
+                    <p class="texto-formulario">*¿Como calificiaria nuestra pagina web?:</p>
 
-                <input type="checkbox">
-                <label for="">Muy buena atencion</label>
+                    <input type="checkbox">
+                    <label for="muy buena atencion" name="mala">Muy buena atencion</label>
 
-                <input type="checkbox">
-                <label for="">buena atencion</label>
+                    <input type="checkbox">
+                    <label for="buena atencion" name="mala">buena atencion</label>
 
-                <input type="checkbox">
-                <label for="">mala atencion</label>
+                    <input type="checkbox">
+                    <label for="mala atencion" name="mala">mala atencion</label>
 
-                <input type="checkbox">
-                <label for="">Muy mala atencion</label>
+                    <input type="checkbox">
+                    <label for="muy mala atencion" name="mala">Muy mala atencion</label>
 
-            </div>
+                </div>
 
-            <div>
-<!-- enviar/reset -->
-                <input type="submit" value="enviar">
-                <input type="reset" value="borrar todo">
-            </div>
+                <div class="imputs">
+                    <!-- enviar/reset -->
+                    <input type="submit" value="enviar" class="bordes">
+                    <input type="reset" value="borrar todo" class="bordes">
+                </div>
 
-        </form>
+            </form>
 
         </section>
 
     </main>
 
 
-    <footer>
+    <footer class="container">
 
-        <h4>Mas Informacion Sobre Nosotros</h4>
+        <h4 class="footer-titulo">Mas Informacion Sobre Nosotros</h4>
 
         <div>
-
-            <ul class="footer-container">
-
+            <ul>
                 <li>Direccion: av libertador 455, merlo, buenos aires, argentina </li>
                 <li>Mail: consulnatta@gmail.Com</li>
                 <li>Numero de telefono general: 11 34567899</li>
-
             </ul>
-
+        </div>
         </div>
 
-        <div>
+        <div class="redes-sociales">
+            <ul class="redes">
+                <li>
+                    <img src="../assets/images/facebook.png" alt="facebook" height="50px">
+                </li>
 
-            <ul class="footer-container">
+                <li>
+                    <img src="../assets/images/instagram.png" alt="instagram" height="65px">
+                </li>
 
-                <li>Si desea contactartse con nosotros <a href="../pages/Contacto.html">Click Aqui</a></li>
+                <li>
+                    <img src="../assets/images/twitter.png" alt="twitter" height="50px">
+                </li>
             </ul>
-
-
         </div>
 
     </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
