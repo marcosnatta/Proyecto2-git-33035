@@ -27,3 +27,9 @@ article {
         line-height: 40px;
     }
 }
+
+@include mapa-celular;
+
+@include mapa-tablet;
+
+@include mapa-escritorio;

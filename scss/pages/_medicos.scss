@@ -9,21 +9,20 @@
 }
 
 .tarjetas-doctores{
-    border: solid;
-    border-radius: 50px;
-    padding: $espaciado;
-    background-color: rgb(193, 210, 212);
-    text-align: center;
-    font-size: x-large;
-    align-content: center;
-    align-items: baseline;
-
-    &:hover{
-        box-shadow: 0 5px 15px green;
-        transform: translateY(-15px);
-    }
-
+    @include tarjeta-doctores;
 }
 .juana{
         padding-top: 1px;
     }
+
+
+@include medida-doctores1;
+@include medida-doctores2;
+@include medida-doctores3;
+
+@include mapa-celular;
+
+@include mapa-tablet;
+    
+@include mapa-escritorio;
+

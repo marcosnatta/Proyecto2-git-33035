@@ -1,9 +1,11 @@
 @import"./utils/variables";
 @import"./utils/mixin";
+@import"./utils/media";
 
 @import"./base/reset";
 
 @import"./components/botones";
+@import"./components/tarjetas";
 
 @import"./layout/footer";
 @import"./layout/header";

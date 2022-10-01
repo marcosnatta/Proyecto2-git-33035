@@ -27,6 +27,11 @@
 
 .conoce-a-medicos{
     @include efecto2;
+    text-decoration-line: none;
+    a{
+        color: #41464b91;
+    text-decoration: none;
+    }
 }
 .turnos{
     @include tarjeta;
@@ -42,3 +47,9 @@
     }
     
 }
+
+@include mapa-celular;
+
+@include mapa-tablet;
+
+@include mapa-escritorio;
