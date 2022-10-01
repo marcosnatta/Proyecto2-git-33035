@@ -3,42 +3,39 @@ body{
 }
 
 /* cambios en el header */
-.titulo-consulnatta{
+/* .titulo-consulnatta{
     text-align: center;
     padding: 10px;
     padding-left: 20px;
     padding-bottom: 10px;
-    color: rgb(19, 120, 138);
-}
+    color: rgb(19, 120, 138); */
+/* }
 .logoconsul{
     width: 65px;
     border-radius: 10px;    
-}
+} */
 /* cambiar de color la barra y agregar un borde simple */
-.navbar{
+/* .navbar{
     --bs-navbar-color: rgb(24, 112, 36);
-}
+} */
 
 /* modificar el h2 para que quede mas lindo */
-.sobre-nosotros{
+/* .sobre-nosotros{
     text-align: center;
     padding: 20px;
-}
-.nosotros{
-    color: rgb(119, 45, 45);
-}
+} */
 
-.texto-presentacion{
+/* .texto-presentacion{
     text-align: center;
     font-style: italic;
     font-weight: 100px;
     padding-top: 100px;
     padding-bottom: 60px;
-}
+} */
  
 /* footer - agregar redes sociales */
 
-footer{
+/* footer{
     padding-bottom: 100px;
 }
 .footer-titulo{
@@ -54,7 +51,7 @@ footer{
     text-align: center;
 }
 /* sacar los odiosos bullet */
-ul{
+/* ul{
     font-size: large;
     font-style: italic;
     list-style: none;
@@ -74,19 +71,19 @@ a{
     background:linear-gradient(lightblue,rgb(190, 190, 204));
     transition-property: transform;
     transition-duration: 1s;
-}
+} */
 
-.boton-click:hover{
+/* .boton-click:hover{
     color: white;
     transform: rotate(360deg);
 
-}
-
+} */
+/* 
 .redes{
     display:flex; 
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 /* pagina medicos con media*/
 

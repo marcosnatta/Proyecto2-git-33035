@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(212, 223, 235);
+}
+
+article {
+    padding: 50px;
+
+    h2 {
+        color: $coloruno;
+        font-weight: inherit;
+        font-style: $textolindo;
+        text-decoration-line: underline;
+        text-decoration-color: rgb(28, 140, 173);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    span{
+        color:$colorheader;
+    }
+
+    p {
+        text-align: center;
+        font-style: $textolindo;
+        padding-top:40px;
+        padding-bottom: 60px;
+        line-height: 40px;
+    }
+}
