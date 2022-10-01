@@ -87,19 +87,19 @@ a{
 
 /* pagina medicos con media*/
 
-.drs{
+/* .drs{
     color: rgb(179, 179, 52);
 
-}
+} */
 
 
-.doctores-items{
+/* .doctores-items{
     font-style: italic;
     font-size: large;
     text-align: center;
     display: flex;
     flex-direction: column;
-}
+} */
 
 @media(min-width:768px){
     .doctores-items{

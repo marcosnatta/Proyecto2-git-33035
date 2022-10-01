@@ -1,0 +1,44 @@
+.contenedor-especialidades{
+    h3{
+        color: $colorheader;
+        text-decoration-line: underline;
+    }
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: $espaciado;
+    font-style: $textolindo;
+    font-weight: bold;
+    color: rgb(97, 80, 80);
+    padding-inline: 220px;
+    }
+
+
+
+.especialidades{
+    font-style: $textolindo;
+    padding: $espaciado;
+    color: $colorheader;
+    text-align: center;
+    text-decoration-line: underline;
+}
+ li{
+        list-style: none;
+    }
+
+.conoce-a-medicos{
+    @include efecto2;
+}
+.turnos{
+    @include tarjeta;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    background-color: rgb(121, 150, 170);
+    justify-content: baseline;
+
+    &:hover{
+        @include efecto;
+        background-color: rgb(185, 220, 185);
+    }
+    
+}
