@@ -1,28 +1,28 @@
-
-.doctores-items{
+.doctores-items {
     display: flex;
     gap: $espaciado;
-    h2{
-        color: rgb(179, 179, 52); 
+
+    h2 {
+        color: rgb(179, 179, 52);
     }
-    
+
 }
 
-.tarjetas-doctores{
+.tarjetas-doctores {
     @include tarjeta-doctores;
 }
-.juana{
-        padding-top: 1px;
-    }
 
+.juana {
+    padding-top: 1px;
+}
 
-@include medida-doctores1;
-@include medida-doctores2;
-@include medida-doctores3;
 
 @include mapa-celular;
 
 @include mapa-tablet;
-    
+
 @include mapa-escritorio;
 
+@include medida-doctores1;
+@include medida-doctores2;
+@include medida-doctores3;

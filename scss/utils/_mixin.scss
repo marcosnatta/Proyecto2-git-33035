@@ -15,21 +15,220 @@
 
 @mixin efecto2 {
     padding: 10px;
-        width: 200px;
-        color: rgb(201, 70, 70);
-        border-radius: 20px;
-        background: linear-gradient(lightblue, rgb(190, 190, 204));
-        transition-property: transform;
-        transition-duration: 1s;
-        display: inline-block;
-        text-decoration: none;
-        text-align: center;
+    width: 200px;
+    color: rgb(201, 70, 70);
+    border-radius: 20px;
+    background: linear-gradient(lightblue, rgb(190, 190, 204));
+    transition-property: transform;
+    transition-duration: 1s;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 
 
-        &:hover {
-            color: $coloruno;
-            transform: rotate(360deg);
-        }
-    
+    &:hover {
+        color: $coloruno;
+        transform: rotate(360deg);
+    }
+
 }
 
+@mixin mapa-celular {
+    @media(min-width:$celular) {
+        .mapa {
+            width: 440px;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin mapa-tablet {
+    @media(min-width:$tablet) {
+        .mapa {
+            width: 690px;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin mapa-escritorio {
+    @media(min-width:$escritorio) {
+        .mapa {
+            width: 1100px;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin medida-doctores1 {
+    @media(min-width:$celular) {
+        .doctores-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @content
+    }
+
+}
+
+;
+
+@mixin medida-doctores2 {
+    @media(min-width:$tablet) {
+        .doctores-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin medida-doctores3 {
+    @media(min-width:$escritorio) {
+        .doctores-items {
+            display: flex;
+            flex-direction: row;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin medida-especialidades1 {
+    @media(min-width:$tablet) {
+        .contenedor-especialidades {
+            justify-content: center;
+        }
+
+        @content
+    }
+}
+
+;
+
+@mixin medida-consultorio1 {
+    @media(min-width:$celular) {
+        h2 {
+            padding: 20px;
+            color: rgb(171 110 110 / 46%);
+            text-align: center;
+        }
+
+        @content
+    }
+
+}
+
+;
+
+@mixin medida-consultorio2 {
+    @media(min-width:$tablet) {
+        h2 {
+            padding: $espaciado;
+            color: rgb(13 110 253 / 53%);
+            text-align: center;
+            text-decoration-line: underline;
+            text-decoration-color: #bdbdbd;
+        }
+
+        .consul {
+            color: rgb(211 24 171);
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        .texto-consul {
+            font-weight: bold;
+            color: #a753539e;
+            font-size: larger;
+        }
+
+        @content
+    }
+}
+
+;
+
+
+
+
+@mixin medida-form1 {
+    @media(min-width:$celular) {
+
+        p {
+            text-align: center;
+            font-size: larger;
+            font-weight: 600;
+            font-style: oblique;
+            color: #64649ba6;
+        }
+
+        label {
+            font-size: large;
+            padding-bottom: 20px;
+            padding-top: $espaciado;
+            font-family: monospace;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 30px;
+            background-color: #c8c8dfcf;
+            font-size: larger;
+
+        }
+        .prueba {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        select {
+            @extend input;
+        }
+
+        textarea {
+            @extend input;
+        }
+
+        @content
+    }
+
+}
+
+;
+
+
+@mixin medida-form2 {
+    @media(min-width:$escritorio) {
+        .prueba {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @content
+}
+
+;
