@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(212, 223, 235);
+    background: linear-gradient(rgb(243, 248, 243), rgba(108, 190, 196, 0.377), rgb(188, 188, 219));
 }
 
 article {
@@ -8,9 +8,7 @@ article {
     h2 {
         color: $coloruno;
         font-weight: inherit;
-        font-style: $textolindo;
-        text-decoration-line: underline;
-        text-decoration-color: rgb(28, 140, 173);
+        text-decoration: none;
         padding-bottom: 50px;
         text-align: center;
     }
@@ -20,6 +18,7 @@ article {
     }
 
     p {
+        color: rgba(0, 0, 0, 0.514);
         text-align: center;
         font-style: $textolindo;
         padding-top:40px;

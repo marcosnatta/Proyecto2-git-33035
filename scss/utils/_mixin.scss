@@ -25,7 +25,7 @@
 @mixin mapa-escritorio {
     @media(min-width:$escritorio) {
         .mapa {
-            width: 1100px;
+            width: 1300px;
         }
 
         @content

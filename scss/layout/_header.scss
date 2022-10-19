@@ -12,5 +12,16 @@ h1 {
 }
 
 .navbar{
-    --bs-navbar-color:rgb(163, 130, 130);
+    --bs-navbar-color:rgb(102, 124, 111);
+    .nav-link{
+        background-color: rgba(158, 83, 83, 0.301);
+        border-radius: 20px;
+        transition-property: transform;
+        &:hover{
+            background-color: rgba(158, 83, 83, 0.692);
+            transform:translateY(-10px) rotateY(360deg),;
+            transition-duration: 1.5s;
+        }
+        
+    }
 }

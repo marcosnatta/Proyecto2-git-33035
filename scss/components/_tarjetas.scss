@@ -1,15 +1,16 @@
 @mixin tarjeta-doctores {
-    border: solid;
+    border: solid 0.5px;
     border-radius: 50px;
     padding: $espaciado;
-    background-color: rgb(193, 210, 212);
+    background-color: rgba(187, 222, 226, 0);
     text-align: center;
     font-size: x-large;
     align-content: center;
     align-items: baseline;
+    cursor: pointer;
 
     &:hover{
-        box-shadow: 0 5px 15px rgb(99, 126, 99);
+        box-shadow: 0 5px 15px rgb(196, 29, 29);
         transform: translateY(-30px);
     }
     }

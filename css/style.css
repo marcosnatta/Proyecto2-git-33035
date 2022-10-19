@@ -2,12 +2,11 @@ footer {
   padding-bottom: 100px;
 }
 footer h4 {
+  color: rgb(240, 138, 138);
   text-align: center;
-  text-decoration: underline;
   font-weight: bold;
-  font-size: larger;
+  font-size: xx-large;
   font-style: italic;
-  color: rgba(143, 75, 19, 0.63);
   padding: 40px;
 }
 footer ul {
@@ -19,11 +18,10 @@ footer ul {
 }
 footer a {
   padding: 10px;
-  color: rgb(201, 70, 70);
+  color: rgb(187, 117, 70);
   border-radius: 20px;
   background: linear-gradient(lightblue, rgb(190, 190, 204));
   transition-property: transform;
-  transition-duration: 1s;
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -31,6 +29,7 @@ footer a {
 footer a:hover {
   color: rgb(117, 194, 164);
   transform: rotate(360deg);
+  transition-duration: 1.5s;
 }
 footer .redes {
   display: flex;
@@ -55,11 +54,21 @@ h1 {
 }
 
 .navbar {
-  --bs-navbar-color:rgb(163, 130, 130);
+  --bs-navbar-color:rgb(102, 124, 111);
+}
+.navbar .nav-link {
+  background-color: rgba(158, 83, 83, 0.301);
+  border-radius: 20px;
+  transition-property: transform;
+}
+.navbar .nav-link:hover {
+  background-color: rgba(158, 83, 83, 0.692);
+  transform: translateY(-10px) rotateY(360deg);
+  transition-duration: 1.5s;
 }
 
 body {
-  background-color: rgb(212, 223, 235);
+  background: linear-gradient(rgb(243, 248, 243), rgba(108, 190, 196, 0.377), rgb(188, 188, 219));
 }
 
 article {
@@ -68,9 +77,7 @@ article {
 article h2 {
   color: rgb(117, 194, 164);
   font-weight: inherit;
-  font-style: italic;
-  text-decoration-line: underline;
-  text-decoration-color: rgb(28, 140, 173);
+  text-decoration: none;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -78,6 +85,7 @@ article span {
   color: rgb(240, 138, 138);
 }
 article p {
+  color: rgba(0, 0, 0, 0.514);
   text-align: center;
   font-style: italic;
   padding-top: 40px;
@@ -97,7 +105,7 @@ article p {
 }
 @media (min-width: 1200px) {
   .mapa {
-    width: 1100px;
+    width: 1300px;
   }
 }
 .contenedor-especialidades {
@@ -179,7 +187,7 @@ li {
 }
 @media (min-width: 1200px) {
   .mapa {
-    width: 1100px;
+    width: 1300px;
   }
 }
 @media (min-width: 768px) {
@@ -199,7 +207,7 @@ li {
 }
 @media (min-width: 1200px) {
   .mapa {
-    width: 1100px;
+    width: 1300px;
   }
 }
 @media (min-width: 500px) {
@@ -240,22 +248,19 @@ li {
 }
 
 .tarjetas-doctores {
-  border: solid;
+  border: solid 0.5px;
   border-radius: 50px;
   padding: 40px;
-  background-color: rgb(193, 210, 212);
+  background-color: rgba(187, 222, 226, 0);
   text-align: center;
   font-size: x-large;
   align-content: center;
   align-items: baseline;
+  cursor: pointer;
 }
 .tarjetas-doctores:hover {
-  box-shadow: 0 5px 15px rgb(99, 126, 99);
+  box-shadow: 0 5px 15px rgb(196, 29, 29);
   transform: translateY(-30px);
-}
-
-.juana {
-  padding-top: 1px;
 }
 
 @media (min-width: 500px) {
@@ -270,7 +275,7 @@ li {
 }
 @media (min-width: 1200px) {
   .mapa {
-    width: 1100px;
+    width: 1300px;
   }
 }
 @media (min-width: 500px) {
@@ -338,7 +343,7 @@ li {
 }
 @media (min-width: 1200px) {
   .mapa {
-    width: 1100px;
+    width: 1300px;
   }
 }
 
