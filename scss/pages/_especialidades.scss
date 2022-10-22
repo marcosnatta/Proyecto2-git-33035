@@ -34,7 +34,7 @@
     }
 }
 .turnos{
-    @include tarjeta;
+    @include tarjeta-especialidades;
     border: none;
     width: 400px;
     height: 400px;

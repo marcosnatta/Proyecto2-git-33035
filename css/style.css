@@ -54,7 +54,7 @@ h1 {
 }
 
 .navbar {
-  --bs-navbar-color:rgb(102, 124, 111);
+  --bs-navbar-color:rgba(50, 61, 61, 0.329);
 }
 .navbar .nav-link {
   background-color: rgba(158, 83, 83, 0.301);
@@ -63,8 +63,8 @@ h1 {
 }
 .navbar .nav-link:hover {
   background-color: rgba(158, 83, 83, 0.692);
-  transform: translateY(-10px) rotateY(360deg);
-  transition-duration: 1.5s;
+  transform: translateY(-10px);
+  transition-duration: 0.1 s;
 }
 
 body {
@@ -88,7 +88,6 @@ article p {
   color: rgba(0, 0, 0, 0.514);
   text-align: center;
   font-style: italic;
-  padding-top: 40px;
   padding-bottom: 60px;
   line-height: 40px;
 }
@@ -157,9 +156,9 @@ li {
 
 .turnos {
   border: solid;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 40px;
-  background-color: rgb(193, 210, 212);
+  background-color: rgb(203, 219, 221);
   text-align: center;
   font-size: large;
   border: none;
@@ -240,8 +239,14 @@ li {
   }
 }
 .doctores-items {
-  display: flex;
-  gap: 40px;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 800px 800px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 150px;
 }
 .doctores-items h2 {
   color: rgb(179, 179, 52);
@@ -250,12 +255,11 @@ li {
 .tarjetas-doctores {
   border: solid 0.5px;
   border-radius: 50px;
-  padding: 40px;
+  padding: 50px;
   background-color: rgba(187, 222, 226, 0);
   text-align: center;
   font-size: x-large;
   align-content: center;
-  align-items: baseline;
   cursor: pointer;
 }
 .tarjetas-doctores:hover {
@@ -276,24 +280,6 @@ li {
 @media (min-width: 1200px) {
   .mapa {
     width: 1300px;
-  }
-}
-@media (min-width: 500px) {
-  .doctores-items {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .doctores-items {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 1200px) {
-  .doctores-items {
-    display: flex;
-    flex-direction: row;
   }
 }
 @media (min-width: 500px) {

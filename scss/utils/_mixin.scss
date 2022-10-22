@@ -34,7 +34,7 @@
 
 ;
 
-@mixin medida-doctores1 {
+@mixin medida-doctores-celular {
     @media(min-width:$celular) {
         .doctores-items {
             display: flex;
@@ -48,7 +48,7 @@
 
 ;
 
-@mixin medida-doctores2 {
+@mixin medida-doctores-tablet {
     @media(min-width:$tablet) {
         .doctores-items {
             display: flex;
@@ -61,7 +61,7 @@
 
 ;
 
-@mixin medida-doctores3 {
+@mixin medida-doctores-escritorio {
     @media(min-width:$escritorio) {
         .doctores-items {
             display: flex;
