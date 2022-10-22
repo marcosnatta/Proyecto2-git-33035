@@ -1,40 +1,38 @@
 @mixin mapa-celular {
     @media(min-width:$celular) {
+
         .mapa {
-            width: 440px;
+            width: 250px;
         }
 
         @content
     }
 }
-
 ;
 
 @mixin mapa-tablet {
     @media(min-width:$tablet) {
         .mapa {
-            width: 690px;
+            width: 640px;
         }
 
         @content
     }
 }
-
 ;
 
 @mixin mapa-escritorio {
     @media(min-width:$escritorio) {
         .mapa {
-            width: 1300px;
+            width: 1100px;
         }
 
         @content
     }
 }
-
 ;
 
-@mixin medida-doctores-celular {
+@mixin medida-medicos-celular {
     @media(min-width:$celular) {
         .doctores-items {
             display: flex;
@@ -45,10 +43,9 @@
     }
 
 }
-
 ;
 
-@mixin medida-doctores-tablet {
+@mixin medida-medicos-tablet {
     @media(min-width:$tablet) {
         .doctores-items {
             display: flex;
@@ -58,42 +55,101 @@
         @content
     }
 }
-
 ;
 
-@mixin medida-doctores-escritorio {
+@mixin medida-medicos-escritorio {
     @media(min-width:$escritorio) {
         .doctores-items {
-            display: flex;
-            flex-direction: row;
-        }
-
-        @content
-    }
-}
-
-;
-
-@mixin medida-especialidades1 {
-    @media(min-width:$tablet) {
-        .contenedor-especialidades {
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
             justify-content: center;
+            align-items: center;
+            justify-items: center;
+            gap: 100px;
+        
+            h2 {
+                color: rgb(179, 179, 52);
+            }
+        
+        }
+        @content
+    }
+}
+;
+
+@mixin medida-especialidades-celular {
+
+    @media(min-width:$celular) {
+
+        .turnos{
+            border: none;
+            border-radius:1px;
+            padding:80px;
+            padding-right: 20px;
+       }
+        .contenedor-especialidades {
+           display: grid;
+           grid-template-rows: 400px;
+           justify-content: center;
+           width: 166px;
+            padding-right: 1px;
+
         }
 
         @content
     }
 }
-
 ;
 
-@mixin medida-consultorio1 {
+@mixin medida-especialidades-tablet {
+    @media(min-width:$tablet) {
+        .turnos{
+            border: none;
+            padding-right: 100px;
+            border-radius: 30px;
+        }
+
+        .contenedor-especialidades {
+            display: flex;
+            flex-direction: column;
+            padding-left: 150px;          
+             gap: 20px
+         }
+
+        @content
+    }
+}
+;
+
+@mixin medida-especialidades-escritorio {
+    @media(min-width:$escritorio) {
+        .contenedor-especialidades {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: flex-start;
+         }
+
+
+        @content
+    }
+}
+;
+
+@mixin medida-consultorio-celular{
     @media(min-width:$celular) {
         h2 {
             padding: 20px;
-            color: rgb(171 110 110 / 46%);
             text-align: center;
+            color: $colorheader;
         }
-
+        h3{
+            text-align: center;
+            color: #64649ba6;
+            padding: 20px;
+        }
         @content
     }
 
@@ -101,18 +157,48 @@
 
 ;
 
-@mixin medida-consultorio2 {
+@mixin medida-consultorio-tablet {
     @media(min-width:$tablet) {
         h2 {
             padding: $espaciado;
-            color: rgb(13 110 253 / 53%);
+            color:$colorheader;
             text-align: center;
-            text-decoration-line: underline;
-            text-decoration-color: #bdbdbd;
+            text-decoration-line: none;
         }
 
         .consul {
-            color: rgb(211 24 171);
+            color: rgb(92, 123, 133);
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+            padding-bottom: 80px;
+            text-align: center;
+            padding: $espaciado;
+        }
+
+        .texto-consul {
+            font-weight: bold;
+            color: #a753539e;
+            font-size: larger;
+        }
+
+        @content
+    }
+}
+;
+
+
+@mixin medida-consultorio-escritorio{
+    @media(min-width:$escritorio) {
+        h2 {
+            padding: $espaciado;
+            color: $colorheader;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .consul {
+            color: rgba(107, 112, 150, 0.616);
             text-decoration: none;
             font-weight: bold;
             font-style: italic;
@@ -129,9 +215,7 @@
         @content
     }
 }
-
 ;
-
 
 
 

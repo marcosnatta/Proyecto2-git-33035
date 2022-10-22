@@ -1,9 +1,8 @@
 @include mapa-celular;
-
-@include mapa-tablet;
-    
+@include mapa-tablet;    
 @include mapa-escritorio;
 
-@include medida-consultorio1;
 
-@include medida-consultorio2;
+@include medida-consultorio-celular;
+@include medida-consultorio-tablet;
+@include medida-consultorio-escritorio;

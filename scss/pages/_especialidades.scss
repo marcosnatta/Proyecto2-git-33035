@@ -1,7 +1,7 @@
 .contenedor-especialidades{
     h3{
         color: $colorheader;
-        text-decoration-line: underline;
+        text-decoration-line: none;
     }
     display: inline-flex;
     flex-wrap: wrap;
@@ -9,6 +9,12 @@
     font-style: $textolindo;
     font-weight: bold;
     color: rgb(97, 80, 80);
+    gap: 100px;
+
+    &:hover{
+        cursor: pointer;
+        
+    }
     
     }
 
@@ -19,7 +25,7 @@
     padding: $espaciado;
     color: $colorheader;
     text-align: center;
-    text-decoration-line: underline;
+    text-decoration-line:none;
 }
  li{
         list-style: none;
@@ -29,13 +35,12 @@
     @include efecto2;
     text-decoration-line: none;
     a{
-        color: #41464b91;
+    color: #3675b491;
     text-decoration: none;
     }
 }
 .turnos{
     @include tarjeta-especialidades;
-    border: none;
     width: 400px;
     height: 400px;
     justify-content: center;
@@ -50,9 +55,9 @@
 }
 
 @include mapa-celular;
-
 @include mapa-tablet;
-
 @include mapa-escritorio;
 
-@include medida-especialidades1;
+@include medida-especialidades-celular;
+@include medida-especialidades-tablet;
+@include medida-especialidades-escritorio;
