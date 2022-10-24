@@ -114,7 +114,6 @@ article p {
   font-style: italic;
   font-weight: bold;
   color: rgb(97, 80, 80);
-  gap: 100px;
 }
 .contenedor-especialidades h3 {
   color: rgb(240, 138, 138);
@@ -331,6 +330,7 @@ li {
   .doctores-items {
     display: flex;
     flex-direction: column;
+    padding: 0px;
   }
 }
 @media (min-width: 768px) {
